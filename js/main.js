@@ -138,3 +138,19 @@
 	window.addEventListener( 'scroll', scrollPage );
 	trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
 })();
+
+//Script for smooth scrolling between internal links
+
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+	    var offset;
+	    console.log(target);
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top - 100
+	    }, 900, 'swing');
+	});
+});
