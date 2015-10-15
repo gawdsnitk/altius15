@@ -8,7 +8,6 @@
 		<title>Altius 15</title>
 		<meta name="description" content="Altius 15">
 		<meta name="keywords" content="altius,altius 15,nit kkr, nit kurukshertra">
-		<link rel="shortcut icon" href="http://tympanus.net/Development/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/demo.css">
 		<link rel="stylesheet" type="text/css" href="css/component.css">
@@ -22,6 +21,26 @@
 	</head>
 
 	<body class="demo-1">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script>
+			window.onscroll = function() {
+			if (document.body.scrollTop || document.documentElement.scrollTop > 100) {
+		        $("#navigation").stop().animate({
+		        	'height': '60px',
+		        	'line-height': '3.5em'
+		        }, {
+		         	duration: 250, 
+		        	easing: 'easeOutBounce'
+    			});
+		    } else {
+		        $("#navigation").stop().animate({
+		        	height: '100px',
+		        	'line-height': '5.6em'
+		        }, 250);
+		    }
+		}
+		</script>
 		<div id = "navigation">
 			<ul>
 			    <li class="logo">Altius logo</li>
