@@ -162,17 +162,15 @@ $(document).ready(function(){
 $(window).scroll(function() {
 	if($(window).width() > 768) {
 	  if ($(document).scrollTop() > 50) {
-	  	$('.navbar-nav').addClass('shrink');
-	    $('.navbar-nav').removeClass('full');
+	  	$('.nav').removeClass('full').addClass('shrink');
 
 	    $('.navbar-brand').css({
 	    	'padding' : "15px"
 	    });
 	  } else {
-	  	$('.navbar-nav').addClass('full');
-	    $('.navbar-nav').removeClass('shrink');
+	  	$('.nav').removeClass('shrink').addClass('full');
 	    $('.navbar-brand').css({
-	    	"padding": "45px"
+	    	"padding": "35px"
 	    });
 	  }
 	}
