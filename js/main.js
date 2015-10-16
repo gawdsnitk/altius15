@@ -140,17 +140,46 @@
 })();
 
 //Script for smooth scrolling between internal links
-
 $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
 	    var target = this.hash;
 	    var $target = $(target);
-	    var offset;
-	    console.log(target);
+	    var offset = $target.offset().top - 70;
+	    if(target == '#about' || target == '#home') {
+	         console.log(target);
+	         offset += 71;
+	     }
 	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top - 100
+	        'scrollTop': offset
 	    }, 900, 'swing');
 	});
 });
+
+// For navbar to shrink on scroll down
+
+$(window).scroll(function() {
+	if($(window).width() > 768) {
+	  if ($(document).scrollTop() > 50) {
+	  	$('.navbar-nav').addClass('shrink');
+	    $('.navbar-nav').removeClass('full');
+
+	    $('.navbar-brand').css({
+	    	'padding' : "15px"
+	    });
+	  } else {
+	  	$('.navbar-nav').addClass('full');
+	    $('.navbar-nav').removeClass('shrink');
+	    $('.navbar-brand').css({
+	    	"padding": "45px"
+	    });
+	  }
+	}
+});
+
+
+//to shrink navbar on click on link on handheld devices
+$(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
