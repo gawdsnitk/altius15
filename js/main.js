@@ -179,5 +179,5 @@ $(window).scroll(function() {
 
 //to shrink navbar on click on link on handheld devices
 $(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
+    //$(".navbar-collapse").collapse('hide');
   });
