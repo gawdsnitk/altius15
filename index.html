@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/demo.css">
 		<link rel="stylesheet" type="text/css" href="css/component.css">
+		<link rel="stylesheet" type="text/css" href="css/events.css">
 
 
 
@@ -21,8 +22,8 @@
 	</head>
 
 	<body class="demo-1">
-		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src = "js/jquery.js"></script>
+		<script src = "js/jquery-ui.min.js"></script>
 		<script>
 			window.onscroll = function() {
 			if (document.body.scrollTop || document.documentElement.scrollTop > 100) {
@@ -67,9 +68,65 @@
 			</div>
 			<article class="content">
 				<div id = "events">
-				    <h1>Events</h1>
-					<p>Lorem ipsum once there was a crow, he was thrusty, he didn't find any source of water. He then went to somewhere and drank a lot of water that's it :)</p>
-					<p>Events details goes here</p>
+				    <div id = "eventsTypes">
+				        <h1>Events</h1>
+				    	<div class = "chico" id = "event1">
+				    		<div class = "rear">
+				    		</div>
+				    		<div class = "mid">Event1</div>
+				    		<div class = "front" id= "front1">
+				    			Event1 description goes here
+				    		</div>
+				    	</div>
+				    	<div class = "chico" id = "event2">
+				    		<div class = "rear">
+				    		</div>
+				    		<div class = "mid">Event2</div>
+				    		<div class = "front" id= "front2">
+				    			Event2 description goes here
+				    		</div>
+				    	</div>
+				    	<div class = "chico" id = "event3">
+				    		<div class = "rear">
+				    		</div>
+				    		<div class = "mid">Event3</div>
+				    		<div class = "front" id= "front3">
+				    			Event3 description goes here
+				    		</div>
+				    	</div>
+				    	<div class = "chico" id = "event4">
+				    		<div class = "rear">
+				    		</div>
+				    		<div class = "mid">Event4</div>
+				    		<div class = "front" id= "front4">
+				    			Event4 description goes here
+				    		</div>
+				    	</div>
+				    	<div class = "chico" id = "event5">
+				    		<div class = "rear">
+				    		</div>
+				    		<div class = "mid">Event5</div>
+				    		<div class = "front" id= "front5">
+				    			Event5 description goes here
+				    		</div>
+				    	</div>
+				    	<div class = "chico" id = "event6">
+				    		<div class = "rear">
+				    		</div>
+				    		<div class = "mid">Event6</div>
+				    		<div class = "front" id= "front6">
+				    			Event6 description goes here
+				    		</div>
+				    	</div>
+				    </div>
+				    <div id = "eventsDetails">
+				        <div id = "backToEvents">
+				            <p>Back</p>
+				        </div>
+				    	<div id = "eventDetailsContent">
+				    	    Events details goes here
+				    	</div>
+				    </div>
 				</div>
 				<div id = "sponsors">
 				    <h1>Sponsors</h1>
@@ -85,7 +142,7 @@
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
 		<script src="js/main.js"></script>
-	
+	    <script src="js/events.js"></script>
 	</body>
 
 </html>
