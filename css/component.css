@@ -132,15 +132,18 @@ button.trigger {
 	border: none;
 	background: transparent;
 	color: transparent;
-	font-size: 2em;
+	font-size: 3.5em;
 	cursor: pointer;
+}
+button.trigger:hover {
+	margin-bottom: 5px;
+	font-size: 3em;
 }
 
 .container:not(.notrans) button.trigger {
-	-webkit-transition: opacity 0.3s 0.5s;
-	transition: opacity 0.3s 0.5s;
+	-webkit-transition: opacity 0.3s 0.5s, margin-bottom .3s ease-in-out, font-size .3s;
+	transition: opacity 0.3s 0.5s, margin-bottom .3s ease-in-out, font-size .3s;
 }
-
 .container.modify:not(.notrans) button.trigger {
 	opacity: 0;
 	pointer-events: none;

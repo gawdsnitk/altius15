@@ -1,0 +1,36 @@
+.navbar-brand {
+	padding: 45px 0;
+}
+.navbar {
+	background-color: rgba(248,248,248,.9);
+}
+
+ul.navbar-nav {
+	transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav > li:last-of-type {
+	margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		padding: 15px 0;
+	}	
+	.navbar {
+	background-color: rgba(248,248,248,1);
+	}
+}
+
+@media (min-width: 752px){
+	.full li a {
+	    line-height: 110px;
+	    height: 110px;
+	    padding-top: 0;
+	}
+
+	.shrink {
+		line-height: 10px;
+	}
+
+}
