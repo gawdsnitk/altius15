@@ -52,6 +52,9 @@ html, body, .container, .header {
 	left: 50%;
 	height: 100%;
 	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
 
@@ -91,6 +94,10 @@ html, body, .container, .header {
 	line-height: 5.6em;
 	z-index:1501;
 	font-size: .8em;
+	-webkit-transition: transform .8s ease;
+	-moz-transition: transform .8s ease;
+	-ms-transition: transform .8s ease;
+	-o-transition: transform .8s ease;
 	transition: transform .8s ease;
 	background: transparent;
 	color: white;
@@ -142,12 +149,18 @@ button.trigger:hover {
 
 .container:not(.notrans) button.trigger {
 	-webkit-transition: opacity 0.3s 0.5s, margin-bottom .3s ease-in-out, font-size .3s;
+	-moz-transition: opacity 0.3s 0.5s, margin-bottom .3s ease-in-out, font-size .3s;
+	-ms-transition: opacity 0.3s 0.5s, margin-bottom .3s ease-in-out, font-size .3s;
+	-o-transition: opacity 0.3s 0.5s, margin-bottom .3s ease-in-out, font-size .3s;
 	transition: opacity 0.3s 0.5s, margin-bottom .3s ease-in-out, font-size .3s;
 }
 .container.modify:not(.notrans) button.trigger {
 	opacity: 0;
 	pointer-events: none;
 	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-ms-transition-delay: 0s;
+	-o-transition-delay: 0s;
 	transition-delay: 0s;
 }
 
@@ -161,6 +174,9 @@ button.trigger::before {
 	content: attr(data-info);
 	font-size: 0.35em;
 	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 

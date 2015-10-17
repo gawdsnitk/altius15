@@ -7,7 +7,15 @@
 	var toggleEventDetails = function() {
 		if(isEventDetailsVisible == false) {
 			isEventDetailsVisible = true;
+			$('#eventsTypes').css('-webkit-transform', 'translateX(-100%)');
+			$('#eventsTypes').css('-moz-transform', 'translateX(-100%)');
+			$('#eventsTypes').css('-ms-transform', 'translateX(-100%)');
+			$('#eventsTypes').css('-o-transform', 'translateX(-100%)');
 			$('#eventsTypes').css('transform', 'translateX(-100%)');
+			$('#eventsDetails').css('-webkit-transform', 'translateX(-100%)');
+			$('#eventsDetails').css('-moz-transform', 'translateX(-100%)');
+			$('#eventsDetails').css('-ms-transform', 'translateX(-100%)');
+			$('#eventsDetails').css('-o-transform', 'translateX(-100%)');
 			$('#eventsDetails').css('transform', 'translateX(-100%)');
 		}
 		else {
