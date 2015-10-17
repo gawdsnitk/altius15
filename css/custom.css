@@ -1,3 +1,13 @@
+/* kind of parallax*/
+
+#about {
+	background-image: url('../images/about.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+/* parallax end*/
 .navbar-brand {
 	padding: 35px 0;
 }
