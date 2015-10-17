@@ -2,25 +2,18 @@
 	padding: 35px 0;
 	transition: all .5s ease;
 }
-.nav {
-	transition: all .5s ease;
-}
 .navbar {
 	background-color: rgba(248,248,248,.9);
 	font-size: .8em;
+	transition: all .5s ease;
 }
-
-#navbar-collapse ul {
-	transition: all 0.8s ease;
-}
-
 .navbar-nav > li:last-of-type {
 	margin-right: 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.navbar-brand {
-		padding: 15px 0;
+		padding: 15px;
 	}	
 	.navbar {
 	    background-color: rgba(248,248,248,1);
@@ -33,10 +26,11 @@
 	    line-height: 90px;
 	    height: 90px;
 	    padding-top: 0;
+	    transition: all 0.2s ease;
 	}
 
-	.shrink {
-		line-height: 10px;
+	.shrink li a{
+	    transition: all 0.2s ease;
 	}
 
 }

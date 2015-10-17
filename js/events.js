@@ -7,8 +7,8 @@
 	var toggleEventDetails = function() {
 		if(isEventDetailsVisible == false) {
 			isEventDetailsVisible = true;
-			$('#eventsTypes').css('transform', 'translateX(-100%)');
-			$('#eventsDetails').css('transform', 'translateX(-100%)');
+			$('#eventsTypes').css('transform', 'translateX(-150%)');
+			$('#eventsDetails').css('transform', 'translateX(-150%)');
 		}
 		else {
 			isEventDetailsVisible = false;

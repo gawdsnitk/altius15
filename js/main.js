@@ -168,10 +168,11 @@ $(window).scroll(function() {
 	    	'padding' : "15px"
 	    });
 	  } else {
-	  	$('.nav').removeClass('shrink').addClass('full');
-	    $('.navbar-brand').css({
+	  	$('.navbar-brand').css({
 	    	"padding": "35px"
 	    });
+	  	$('.nav').removeClass('shrink').addClass('full', {duration: 100});
+	    
 	  }
 	}
 });
