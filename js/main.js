@@ -168,10 +168,11 @@ $(window).scroll(function() {
 	    	'padding' : "15px"
 	    });
 	  } else {
-	  	$('.nav').removeClass('shrink').addClass('full');
-	    $('.navbar-brand').css({
+	  	$('.navbar-brand').css({
 	    	"padding": "35px"
 	    });
+	  	$('.nav').removeClass('shrink').addClass('full', {duration: 100});
+	    
 	  }
 	}
 });
@@ -179,5 +180,5 @@ $(window).scroll(function() {
 
 //to shrink navbar on click on link on handheld devices
 $(".navbar-nav li a").click(function(event) {
-    //$(".navbar-collapse").collapse('hide');
+    $(".navbar-collapse").collapse('hide');
   });

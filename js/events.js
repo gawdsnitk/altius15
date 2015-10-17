@@ -17,6 +17,8 @@
 			$('#eventsDetails').css('-ms-transform', 'translateX(-100%)');
 			$('#eventsDetails').css('-o-transform', 'translateX(-100%)');
 			$('#eventsDetails').css('transform', 'translateX(-100%)');
+			$('#eventsTypes').css('transform', 'translateX(-150%)');
+			$('#eventsDetails').css('transform', 'translateX(-150%)');
 		}
 		else {
 			isEventDetailsVisible = false;
